@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Syahir's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="main-nav">
+        <div class="container">
+            <header class="group top-nav">
+                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                    <span class="logo">Menu</span>
+                </div>
+                <nav id="navbar-1" class="navbar item-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li>
+                            <button>
+                                <a href="resume.pdf">Resume</a>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hello there,</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="img/ava.jpg" alt="Avatar" />
+                </div>
+                <div class="unit-80">
+                    <h1>I'M <br /><span id="typed"></span></h1>
+                </div>
+                <p>
+                    An aspiring software engineer, with passion in process automation
+                    and building new solutions.
+                    <br />Currently working full-time as a Programmer Analyst at a
+                    consulting firm based in Malaysia. <br />Outside work, you can find
+                    me playing squash
+                    <em>(and dreaming how I want to run my own cafe xD)</em>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Where<br />I've Worked</h1>
+            <ul class="work-list">
+                <li>2023-Present</li>
+                <li><a href="https://www.nmg-consulting.com/">NMG Consulting</a></li>
+                <li>Programmer Analyst</li>
+            </ul>
+            <ul class="work-list">
+                <li>2022-2023</li>
+                <li><a href="https://www.accenture.com/us-en">Accenture</a></li>
+                <li>Application Development Analyst</li>
+            </ul>
+            <ul class="work-list">
+                <li>2019-2021</li>
+                <li>
+                    <a href="https://wellexpertsservices.com/">Well Experts Services</a>
+                </li>
+                <li>Project Engineer</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div class="award section second" id="projects">
+        <div class="container">
+            <h1>Some things <br />I've Built</h1>
+            <ul class="award-list list-flat">
+                <li>Phone Book App</li>
+                <li>Allows user to store and manage their contacts, with features such as search and sort functionality, contact grouping, calculator application and more.</li>
+                <li><em>C# (.NET)</em></li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>Library Management System</li>
+                <li>Manage books and library operations with CRUD functionality, book tracking, lending and return dates, and search and filter options. </li>
+                <li><em>C# (.NET)</em></li>
+            </ul>
+            <ul class="award-list list-flat">
+                <li>Weather Forecast App</li>
+                <li>Provides up-to-date weather information for any location using API integration with additional features such as metric/imperial units switching and customizable backgrounds based on weather conditions.</li>
+                <li><em>JavaScript, HTML, CSS</em></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technologies<br />I've Used</h1>
+            <ul class="skill-list list-flat">
+                <li>Programming Languages</li>
+                <li>C# / Python / JavaScript / SAS / VBA</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Database</li>
+                <li>MySQL / MSSQL / Access</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Framework</li>
+                <li>.NET / NUnit / React / Tailwind</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <p>Built by Ahmad Syahir bin Zuraidin</p>
+                </div>
+                <div class="unit-50">
+                    <ul class="social list-flat right">
+                        <li>
+                            <a href="http://twitter.com/ahmads_z"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/syah1r"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/syahir21/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+    function newTyped() {}
+    $(function() {
+        $("#typed").typed({
+                // Change to edit type effect
+                strings: ["SYAHIR"],
+
+                typeSpeed: 90,
+                backDelay: 700,
+                contentType: "html",
+                loop: !0,
+                resetCallback: function() {
+                    newTyped();
+                },
+            }),
+            $(".reset").click(function() {
+                $("#typed").typed("reset");
+            });
+    });
+    </script>
+</body>
+
+</html>
